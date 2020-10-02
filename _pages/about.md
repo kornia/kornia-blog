@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+## Learn more about us in **[www.kornia.org](www.kornia.org)**
+
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
