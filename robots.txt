@@ -1,1 +1,1 @@
-Sitemap: https://kornia.github.io/kornia-blog/sitemap.xml
+Sitemap: /kornia-blog/sitemap.xml
