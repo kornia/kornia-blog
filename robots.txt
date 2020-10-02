@@ -1,1 +1,1 @@
-Sitemap: /kornia-blog/sitemap.xml
+Sitemap: /blog/sitemap.xml

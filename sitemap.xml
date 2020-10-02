@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/kornia-blog/markdown/2020/01/14/test-markdown-post.html</loc>
+<loc>/blog/markdown/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>/kornia-blog/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
+<loc>/blog/community/announcement/2020/10/02/hello-world.html</loc>
+<lastmod>2020-10-02T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>/kornia-blog/about/</loc>
+<loc>/blog/about/</loc>
 </url>
 <url>
-<loc>/kornia-blog/</loc>
+<loc>/blog/</loc>
 </url>
 <url>
-<loc>/kornia-blog/search/</loc>
+<loc>/blog/search/</loc>
 </url>
 <url>
-<loc>/kornia-blog/categories/</loc>
+<loc>/blog/categories/</loc>
 </url>
 </urlset>
