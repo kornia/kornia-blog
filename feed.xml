@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2020-10-02T17:26:50-05:00</updated><id>/blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Hello World !</title><link href="/blog/community/announcement/2020/10/02/hello-world.html" rel="alternate" type="text/html" title="Hello World !" /><published>2020-10-02T00:00:00-05:00</published><updated>2020-10-02T00:00:00-05:00</updated><id>/blog/community/announcement/2020/10/02/hello-world</id><content type="html" xml:base="/blog/community/announcement/2020/10/02/hello-world.html">&lt;h2 id=&quot;a-long-time-ago-in-a-galaxy-far-far-away&quot;&gt;“A long time ago in a galaxy far, far away….”&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2020-10-02T17:30:26-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Hello World !</title><link href="/kornia-blog/community/announcement/2020/10/02/hello-world.html" rel="alternate" type="text/html" title="Hello World !" /><published>2020-10-02T00:00:00-05:00</published><updated>2020-10-02T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2020/10/02/hello-world</id><content type="html" xml:base="/kornia-blog/community/announcement/2020/10/02/hello-world.html">&lt;h2 id=&quot;a-long-time-ago-in-a-galaxy-far-far-away&quot;&gt;“A long time ago in a galaxy far, far away….”&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/kornia_planet.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_planet.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;“It is a period to backprop gradients ! Rebel researchers, striking from a hidden remote server, have won their first victory against the Classical Computer Vision Empire. During this years, Rebel hackers managed to learn the intels of Empire’s ultimate weapon, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OPENCV&lt;/code&gt; library, a technology that combined with enough ability with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PYTORCH&lt;/code&gt; can change the Computer Vision paradigm.&lt;/p&gt;
 
@@ -14,7 +14,7 @@
 
 &lt;p&gt;Stay tuned and have a happy coding day ! :sunglasses:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><category term="announcement" /><summary type="html">“A long time ago in a galaxy far, far away….”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/blog/images/kornia_logo.png" /><media:content medium="image" url="/blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">An Example Markdown Post</title><link href="/blog/markdown/2020/01/14/test-markdown-post.html" rel="alternate" type="text/html" title="An Example Markdown Post" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>/blog/markdown/2020/01/14/test-markdown-post</id><content type="html" xml:base="/blog/markdown/2020/01/14/test-markdown-post.html">&lt;h1 id=&quot;example-markdown-post&quot;&gt;Example Markdown Post&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><category term="announcement" /><summary type="html">“A long time ago in a galaxy far, far away….”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">An Example Markdown Post</title><link href="/kornia-blog/markdown/2020/01/14/test-markdown-post.html" rel="alternate" type="text/html" title="An Example Markdown Post" /><published>2020-01-14T00:00:00-06:00</published><updated>2020-01-14T00:00:00-06:00</updated><id>/kornia-blog/markdown/2020/01/14/test-markdown-post</id><content type="html" xml:base="/kornia-blog/markdown/2020/01/14/test-markdown-post.html">&lt;h1 id=&quot;example-markdown-post&quot;&gt;Example Markdown Post&lt;/h1&gt;
 
 &lt;h2 id=&quot;basic-setup&quot;&gt;Basic setup&lt;/h2&gt;
 
@@ -68,7 +68,7 @@
 
 &lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog/images/logo.png&quot; alt=&quot;&quot; title=&quot;fast.ai's logo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/logo.png&quot; alt=&quot;&quot; title=&quot;fast.ai's logo&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 
