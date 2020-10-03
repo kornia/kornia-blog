@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2020-10-03T07:34:18-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Hello World !</title><link href="/kornia-blog/community/announcement/2020/10/02/hello-world.html" rel="alternate" type="text/html" title="Hello World !" /><published>2020-10-02T00:00:00-05:00</published><updated>2020-10-02T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2020/10/02/hello-world</id><content type="html" xml:base="/kornia-blog/community/announcement/2020/10/02/hello-world.html">&lt;h2 id=&quot;a-long-time-ago-in-a-galaxy-far-far-away&quot;&gt;“A long time ago in a galaxy far, far away….”&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2020-10-03T09:40:27-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Hello World !</title><link href="/kornia-blog/community/announcement/2020/10/02/hello-world.html" rel="alternate" type="text/html" title="Hello World !" /><published>2020-10-02T00:00:00-05:00</published><updated>2020-10-02T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2020/10/02/hello-world</id><content type="html" xml:base="/kornia-blog/community/announcement/2020/10/02/hello-world.html">&lt;h2 id=&quot;a-long-time-ago-in-a-galaxy-far-far-away&quot;&gt;“A long time ago in a galaxy far, far away….”&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_planet.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -14,4 +14,109 @@
 
 &lt;p&gt;Stay tuned and have a happy coding day ! :sunglasses:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><category term="announcement" /><summary type="html">“A long time ago in a galaxy far, far away….”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><category term="announcement" /><summary type="html">“A long time ago in a galaxy far, far away….”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Kornia v0.4.0 release</title><link href="/kornia-blog/release/2020/08/07/kornia-release-v040.html" rel="alternate" type="text/html" title="Kornia v0.4.0 release" /><published>2020-08-07T00:00:00-05:00</published><updated>2020-08-07T00:00:00-05:00</updated><id>/kornia-blog/release/2020/08/07/kornia-release-v040</id><content type="html" xml:base="/kornia-blog/release/2020/08/07/kornia-release-v040.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.4.0.&lt;/p&gt;
+
+&lt;p&gt;We are releasing a new version for Kornia that includes different functionalities to work with &lt;strong&gt;3D augmentations&lt;/strong&gt; and &lt;strong&gt;volumetric data&lt;/strong&gt;, &lt;strong&gt;local features matching&lt;/strong&gt;, &lt;strong&gt;homographies&lt;/strong&gt; and &lt;strong&gt;epipolar geometry&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;In short, we list the following new features:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support for PyTorch v1.6.0.&lt;/li&gt;
+  &lt;li&gt;Local descriptors matching, homography and epipolar geometry API.&lt;/li&gt;
+  &lt;li&gt;3D augmentations and low-level API to work with volumetric data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;local-features-matching&quot;&gt;Local features matching&lt;/h2&gt;
+
+&lt;p&gt;We include an &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/feature.html#matching&quot;&gt;kornia.feature.matching&lt;/a&gt; API to perform local descriptors matching such classical and derived version of the nearest neighbor (NN).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/match_kornia.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;torch&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;kornia&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;desc1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;desc2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2500&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;128&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;dists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idxs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matching&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;match_nn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;desc1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;desc2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 2500 / 2500x2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;homography-and-epipolar-geometry&quot;&gt;Homography and epipolar geometry&lt;/h2&gt;
+
+&lt;p&gt;We also introduce &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/geometry.homography.html&quot;&gt;kornia.geometry.homography&lt;/a&gt; including different functionalities to work with homographies and differentiable estimators based on the DLT formulation and the iteratively-reweighted least squares (IRWLS).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/epipolar_geometry.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;torch&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;kornia&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;pts1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pts2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;H&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find_homography_dlt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pts1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pts2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;weights&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 1x3x3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In addition, we have ported some of the existing algorithms from &lt;a href=&quot;https://docs.opencv.org/master/d8/d8c/group__sfm.html&quot;&gt;opencv.sfm&lt;/a&gt; to PyTorch under &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/geometry.epipolar.html&quot;&gt;kornia.geometry.epipolar&lt;/a&gt; that includes different functionalities to work with Fundamental, Essential or Projection matrices, and Triangulation methods useful for Structure from Motion problems.&lt;/p&gt;
+
+&lt;h2 id=&quot;3d-augmentations-and-volumetric&quot;&gt;3D augmentations and volumetric&lt;/h2&gt;
+
+&lt;p&gt;We expand the &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/augmentation.html&quot;&gt;kornia.augmentaion&lt;/a&gt; with a series of operators to perform 3D augmentations for volumetric data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_3daugmentations.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this release, we include the following first set of geometric 3D augmentations methods:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;RandomDepthicalFlip3D (along depth axis)&lt;/li&gt;
+  &lt;li&gt;RandomVerticalFlip3D (along height axis)&lt;/li&gt;
+  &lt;li&gt;RandomHorizontalFlip3D (along width axis)&lt;/li&gt;
+  &lt;li&gt;RandomRotation3D&lt;/li&gt;
+  &lt;li&gt;RandomAffine3D&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The API for 3D augmentation work same as with 2D image augmentations:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;torch&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;kornia&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;torch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;eye&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;aug&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;augmentation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RandomVerticalFlip3D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;tensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[[[[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BLANKLINE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BLANKLINE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]]]])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, we also introduce a low level API to perform 4D features transformations &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/geometry.transform.html#kornia.geometry.transform.warp_projective&quot;&gt;kornia.warp_projective&lt;/a&gt; and extending the filtering operators to support 3D kernels &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/filters.html#kornia.filters.filter3D&quot;&gt;kornia.filter3D&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-2d-operators&quot;&gt;More 2d operators&lt;/h2&gt;
+
+&lt;p&gt;We expand as well the list of the 2D image augmentations based on the paper &lt;a href=&quot;https://arxiv.org/pdf/1805.09501.pdf&quot;&gt;AutoAugment: Learning Augmentation Policies from Data&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Solarize&lt;/li&gt;
+  &lt;li&gt;Posterize&lt;/li&gt;
+  &lt;li&gt;Sharpness&lt;/li&gt;
+  &lt;li&gt;Equalize&lt;/li&gt;
+  &lt;li&gt;RandomSolarize&lt;/li&gt;
+  &lt;li&gt;RandomPosterize&lt;/li&gt;
+  &lt;li&gt;RandomShaprness&lt;/li&gt;
+  &lt;li&gt;RandomEqualize&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Please, do not hesitate to check the &lt;a href=&quot;https://github.com/kornia/kornia/releases/tag/v0.4.0&quot;&gt;release notes&lt;/a&gt; on GitHub to learn about the new library features and get more details.&lt;/p&gt;
+
+&lt;p&gt;Have a happy coding day :sunglasses:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia team is happy to announce the release for v0.4.0.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/match_kornia.png" /><media:content medium="image" url="/kornia-blog/images/match_kornia.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
