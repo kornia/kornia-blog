@@ -1,6 +1,6 @@
 ---
 toc: false
-image: images/kornia_logo.png
+image: images/kornia_planet.png
 layout: post
 description: A long time ago in a galaxy far, far away....
 categories: [community, announcement]
