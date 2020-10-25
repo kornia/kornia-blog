@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2020-10-03T10:46:31-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Hello World !</title><link href="/kornia-blog/community/announcement/2020/10/02/hello-world.html" rel="alternate" type="text/html" title="Hello World !" /><published>2020-10-02T00:00:00-05:00</published><updated>2020-10-02T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2020/10/02/hello-world</id><content type="html" xml:base="/kornia-blog/community/announcement/2020/10/02/hello-world.html">&lt;h2 id=&quot;a-long-time-ago-in-a-galaxy-far-far-away&quot;&gt;“A long time ago in a galaxy far, far away….”&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2020-10-25T14:27:42-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia v0.4.1 release</title><link href="/kornia-blog/release/2020/10/20/kornia-release-v041.html" rel="alternate" type="text/html" title="Kornia v0.4.1 release" /><published>2020-10-20T00:00:00-05:00</published><updated>2020-10-20T00:00:00-05:00</updated><id>/kornia-blog/release/2020/10/20/kornia-release-v041</id><content type="html" xml:base="/kornia-blog/release/2020/10/20/kornia-release-v041.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.4.1.&lt;/p&gt;
+
+&lt;p&gt;We include new features for 3D augmentations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RandomCrop3D&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CenterCrop3D&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RandomMotionBlur3D&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RandomEqualize3D&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Few more core functionalities to work on 3D volumetric tensors:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_affine3d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_perspective3d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_perspective_transform3d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crop_by_boxes3d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;motion_blur3d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equalize3d&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_grid3d&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;details-changes&quot;&gt;Details changes&lt;/h2&gt;
+
+&lt;h3 id=&quot;added&quot;&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Update docs for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_affine_matrix2d&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_affine_matrix3d&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/618&quot;&gt;#618&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added docs for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;solarize&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;posterize&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sharpness&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equalize&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/623&quot;&gt;#623&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added tensor device conversion for solarize params (&lt;a href=&quot;https://github.com/kornia/kornia/pull/624&quot;&gt;#624&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added rescale functional and transformation (&lt;a href=&quot;https://github.com/kornia/kornia/pull/631&quot;&gt;#631&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added Mixup data augmentation (&lt;a href=&quot;https://github.com/kornia/kornia/pull/609&quot;&gt;#609&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;equalize3d&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/639&quot;&gt;#639&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;decompose 3x4projection matrix&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/650&quot;&gt;#650&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;normalize_min_max&lt;/code&gt; functionality (&lt;a href=&quot;https://github.com/kornia/kornia/pull/684&quot;&gt;#684&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;random equalize3d&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/653&quot;&gt;#653&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added 3D motion blur (&lt;a href=&quot;https://github.com/kornia/kornia/pull/713&quot;&gt;#713&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added 3D volumetric crop implementation (&lt;a href=&quot;https://github.com/kornia/kornia/pull/689&quot;&gt;#689&lt;/a&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_affine3d&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_perspective3d&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;get_perspective_transform3d&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;crop_by_boxes3d&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_grid3d&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;changed&quot;&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Replace convolution with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unfold&lt;/code&gt; in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;contrib.extract_tensor_patches&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/626&quot;&gt;#626&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Updates Affine scale with non-isotropic values (&lt;a href=&quot;https://github.com/kornia/kornia/pull/646&quot;&gt;#646&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Enabled param p for each augmentation (&lt;a href=&quot;https://github.com/kornia/kornia/pull/664&quot;&gt;#664&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Enabled RandomResizedCrop batch mode when same_on_batch=False (&lt;a href=&quot;https://github.com/kornia/kornia/pull/683&quot;&gt;#683&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Increase speed of transform_points (&lt;a href=&quot;https://github.com/kornia/kornia/pull/687&quot;&gt;#687&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Improves &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;find_homography_dlt&lt;/code&gt; performance improvement and weights params made optional (&lt;a href=&quot;https://github.com/kornia/kornia/pull/690&quot;&gt;#690&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Enable variable side resizing in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kornia.resize&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/628&quot;&gt;#628&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Affine&lt;/code&gt; transformation as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nn.Module&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/630&quot;&gt;#630&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Accelerate augmentations (&lt;a href=&quot;https://github.com/kornia/kornia/pull/708&quot;&gt;#708&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fixed&quot;&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fixed error in normal_transform_pixel3d (&lt;a href=&quot;https://github.com/kornia/kornia/pull/621&quot;&gt;#621&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fixed pipelining multiple augmentations return wrong transformation matrix (#645)(&lt;a href=&quot;https://github.com/kornia/kornia/pull/645&quot;&gt;645&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fixed flipping returns wrong transformation matrices (&lt;a href=&quot;https://github.com/kornia/kornia/pull/648&quot;&gt;#648&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fixed 3d augmentations return wrong transformation matrix (&lt;a href=&quot;https://github.com/kornia/kornia/pull/665&quot;&gt;#665&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fix the SOSNet loading bug (&lt;a href=&quot;https://github.com/kornia/kornia/pull/668&quot;&gt;#668&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fix/random perspective returns wrong transformation matrix (&lt;a href=&quot;https://github.com/kornia/kornia/pull/667&quot;&gt;#667&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fixes Zca inverse transform (&lt;a href=&quot;https://github.com/kornia/kornia/pull/695&quot;&gt;#695&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Fixes Affine scale bug (&lt;a href=&quot;https://github.com/kornia/kornia/pull/714&quot;&gt;#714&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;removed&quot;&gt;Removed&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Removed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;warp_projective&lt;/code&gt; (&lt;a href=&quot;https://github.com/kornia/kornia/pull/689&quot;&gt;#689&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;contributors&quot;&gt;Contributors&lt;/h2&gt;
+&lt;p&gt;@gaurav104 @shijianjian @mshalvagal @pmeier @ducha-aiki @qxcv @FGeri @vribeiro1 @ChetanPatil28 @alopezgit @jatentaki @dkoguciuk @ceroytres @ag14774&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Please, do not hesitate to check the &lt;a href=&quot;https://github.com/kornia/kornia/releases/tag/v0.4.1&quot;&gt;release notes&lt;/a&gt; on GitHub to learn about the new library features and get more details.&lt;/p&gt;
+
+&lt;p&gt;Have a happy coding day :sunglasses:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia team is happy to announce the release for v0.4.1.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Hello World !</title><link href="/kornia-blog/community/announcement/2020/10/02/hello-world.html" rel="alternate" type="text/html" title="Hello World !" /><published>2020-10-02T00:00:00-05:00</published><updated>2020-10-02T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2020/10/02/hello-world</id><content type="html" xml:base="/kornia-blog/community/announcement/2020/10/02/hello-world.html">&lt;h2 id=&quot;a-long-time-ago-in-a-galaxy-far-far-away&quot;&gt;“A long time ago in a galaxy far, far away….”&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_planet.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
