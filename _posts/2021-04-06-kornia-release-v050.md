@@ -22,7 +22,7 @@ from kornia import morphology as morph
 dilated_image = morph.dilation(tensor, kernel) # Dilation
 plot_morph_image(dilated_image) # Plot
 ```
-![]("https://user-images.githubusercontent.com/5157099/111034527-73b01a80-8416-11eb-9012-976db14ef826.png")
+![]({{ site.baseurl }}/images/morphology_cats.png)
 
 See a full tutorial here: https://github.com/kornia/tutorials/blob/master/source/morphology_101.ipynb
 
@@ -34,7 +34,7 @@ Here is notebook, showing the usage and benefits of new features. We also show h
 
 Also: exposed set_laf_orientation function #869
 
-![]("https://user-images.githubusercontent.com/4803565/111051654-19827a00-8455-11eb-9edd-d965f3446088.png")
+![]({{ site.baseurl }}/images/deep_matching.png)
 
 ## Video Augmentations
 
@@ -57,7 +57,7 @@ aug_list = VideoSequential(
 
 out = aug(input)
 ```
-![]("https://user-images.githubusercontent.com/5157099/111078400-7c2b5280-84f5-11eb-854f-71c5e87bc4c3.png")
+![]({{ site.baseurl }}/images/video_sequential.png)
 
 See a full example in the following Colab:
 https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sharing
@@ -72,7 +72,7 @@ color = torch.tensor([255., 0., 0.])
 
 x_out = K.utils.draw_rectangle(x_rgb, rects, color)
 ```
-![]("https://user-images.githubusercontent.com/5157099/111036305-e2917180-841e-11eb-8884-2e4d89177fe8.png")
+![]({{ site.baseurl }}/images/draw_rectangle.png)
 
 See full example here: https://colab.research.google.com/drive/1me_DxgMvsHIheLh-Pao7rmrsafKO5Lg3?usp=sharing
 
