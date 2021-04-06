@@ -15,7 +15,7 @@ Hello `KORNIANS` !
 
 After the release of *Kornia v0.5.0*, we are pleased to announce that we are striking back with new ideas for future releases.
 
-For this reason, we have published our public roadmap for **Kornia v0.6.0** in the following [**ROADMAP**](https://github.com/kornia/kornia/issues/930)
+For this reason, we have published our public **Kornia v0.6.0** [[**ROADMAP**]](https://github.com/kornia/kornia/issues/930)
 
 In the upcoming release we will target the following high level features:
 
