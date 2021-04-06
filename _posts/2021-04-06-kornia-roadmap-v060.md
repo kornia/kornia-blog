@@ -7,7 +7,7 @@ categories: [community, announcement]
 title: Roadmap Kornia v0.6.0 !
 ---
 
-## "Roadmap Kornia v0.6.0 announcement"
+## Roadmap Kornia v0.6.0 announcement
 
 ![]({{ site.baseurl }}/images/kornia_banner.png)
 
