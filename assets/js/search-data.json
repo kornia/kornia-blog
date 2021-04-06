@@ -4,8 +4,8 @@
         "post0": {
             "title": "Roadmap Kornia v0.6.0 !",
             "content": "“Roadmap Kornia v0.6.0 announcement” . . Hello KORNIANS ! . After the release of Kornia v0.5.0, we are pleased to announce that we are striking back with new ideas for future releases. . For this reason, we have published our public roadmap for Kornia v0.6.0 in the following ROADMAP &lt;– . In the upcoming release we will target the following high level features: . Improve kornia.augmentations and refactor the backend pipeline to support Torchscript. | Improve kornia.color module adding more functionality with losses. | Add kornia.nn module to wrap functionals as torch modules. | . Feel free to volunteer yourself if you are interested in trying out some items (they do not have to be on the list). . Please, take also a read on the CONTRIBUTING notes. . Stay tuned and have a happy coding day ! :sunglasses: . The Kornia team .",
-            "url": "/kornia-blog/community/announcement/2021/04/06/Kornia-roadmap-060.html",
-            "relUrl": "/community/announcement/2021/04/06/Kornia-roadmap-060.html",
+            "url": "/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html",
+            "relUrl": "/community/announcement/2021/04/06/kornia-roadmap-v060.html",
             "date": " • Apr 6, 2021"
         }
         
