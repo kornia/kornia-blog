@@ -119,6 +119,7 @@ def warp_perspective(src: torch.Tensor, M: torch.Tensor, dsize: Tuple[int, int],
                      mode: str = 'bilinear', padding_mode: str = 'zeros',
                      align_corners: Optional[bool] = None) -> torch.Tensor:
 ```
-Please review the full release notes here: https://github.com/kornia/kornia/blob/master/CHANGELOG.md
+Please review the full release notes here:
+[https://github.com/kornia/kornia/blob/master/CHANGELOG.md](https://github.com/kornia/kornia/blob/master/CHANGELOG.md)
 
 Thanks to all our contributors !!! :sunglasses:
