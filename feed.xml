@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-04-06T13:25:50-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia v0.5.0 release</title><link href="/kornia-blog/release/2021/04/06/kornia-release-v050.html" rel="alternate" type="text/html" title="Kornia v0.5.0 release" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>/kornia-blog/release/2021/04/06/kornia-release-v050</id><content type="html" xml:base="/kornia-blog/release/2021/04/06/kornia-release-v050.html">&lt;p&gt;In this release we have focus in bringing more classic Computer Vision functionalities to the PyTorch ecosystem, like morphological operators and more diversity with Deep Local Descriptors, color conversions and drawing functions. In addition, we have worked towards improving the integration with TPU and better support with Torchscript.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-04-06T13:28:19-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia v0.5.0 release</title><link href="/kornia-blog/release/2021/04/06/kornia-release-v050.html" rel="alternate" type="text/html" title="Kornia v0.5.0 release" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>/kornia-blog/release/2021/04/06/kornia-release-v050</id><content type="html" xml:base="/kornia-blog/release/2021/04/06/kornia-release-v050.html">&lt;p&gt;In this release we have focus in bringing more classic Computer Vision functionalities to the PyTorch ecosystem, like morphological operators and more diversity with Deep Local Descriptors, color conversions and drawing functions. In addition, we have worked towards improving the integration with TPU and better support with Torchscript.
 Highlights&lt;/p&gt;
 
 &lt;h2 id=&quot;morphological-operators&quot;&gt;Morphological Operators&lt;/h2&gt;
@@ -12,7 +12,7 @@ Highlights&lt;/p&gt;
 &lt;span class=&quot;n&quot;&gt;dilated_image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;morph&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dilation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tensor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Dilation
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot_morph_image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dilated_image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Plot
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;&amp;quot;https://user-images.githubusercontent.com/5157099/111034527-73b01a80-8416-11eb-9012-976db14ef826.png&amp;quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/morphology_cats.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;See a full tutorial here: https://github.com/kornia/tutorials/blob/master/source/morphology_101.ipynb&lt;/p&gt;
 
@@ -24,7 +24,7 @@ Highlights&lt;/p&gt;
 
 &lt;p&gt;Also: exposed set_laf_orientation function #869&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;&amp;quot;https://user-images.githubusercontent.com/4803565/111051654-19827a00-8455-11eb-9edd-d965f3446088.png&amp;quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/deep_matching.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;video-augmentations&quot;&gt;Video Augmentations&lt;/h2&gt;
 
@@ -46,7 +46,7 @@ Highlights&lt;/p&gt;
 
 &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;&amp;quot;https://user-images.githubusercontent.com/5157099/111078400-7c2b5280-84f5-11eb-854f-71c5e87bc4c3.png&amp;quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/video_sequential.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;See a full example in the following Colab:
 https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sharing&lt;/p&gt;
@@ -60,7 +60,7 @@ https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sh
 
 &lt;span class=&quot;n&quot;&gt;x_out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;K&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;utils&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;draw_rectangle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_rgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rects&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;&amp;quot;https://user-images.githubusercontent.com/5157099/111036305-e2917180-841e-11eb-8884-2e4d89177fe8.png&amp;quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/draw_rectangle.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;See full example here: https://colab.research.google.com/drive/1me_DxgMvsHIheLh-Pao7rmrsafKO5Lg3?usp=sharing&lt;/p&gt;
 
