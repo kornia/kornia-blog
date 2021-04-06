@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Kornia v0.5.0 release | Planet Kornia</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Kornia v0.5.0 release" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Morphological operators, Deep descriptors, Video Augmentations and more." />
+<meta property="og:description" content="Morphological operators, Deep descriptors, Video Augmentations and more." />
+<meta property="og:site_name" content="Planet Kornia" />
+<meta property="og:image" content="/kornia-blog/images/kornia_logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-06T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"/kornia-blog/release/2021/04/06/kornia-release-v050.html","@type":"BlogPosting","headline":"Kornia v0.5.0 release","dateModified":"2021-04-06T00:00:00-05:00","datePublished":"2021-04-06T00:00:00-05:00","image":"/kornia-blog/images/kornia_logo.png","mainEntityOfPage":{"@type":"WebPage","@id":"/kornia-blog/release/2021/04/06/kornia-release-v050.html"},"description":"Morphological operators, Deep descriptors, Video Augmentations and more.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/kornia-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/kornia-blog/feed.xml" title="Planet Kornia" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-179510466-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/kornia-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper">
+<a class="site-title" rel="author" href="/kornia-blog/">Planet Kornia</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+<a class="page-link" href="/kornia-blog/about/">About Me</a><a class="page-link" href="/kornia-blog/search/">Search</a><a class="page-link" href="/kornia-blog/categories/">Tags</a>
+</div>
+      </nav>
+</div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Kornia v0.5.0 release</h1>
+<p class="page-description">Morphological operators, Deep descriptors, Video Augmentations and more.</p>
+<p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-04-06T00:00:00-05:00" itemprop="datePublished">
+        Apr 6, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i> 
+      
+        <a class="category-tags-link" href="/kornia-blog/categories/#release">release</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>In this release we have focus in bringing more classic Computer Vision functionalities to the PyTorch ecosystem, like morphological operators and more diversity with Deep Local Descriptors, color conversions and drawing functions. In addition, we have worked towards improving the integration with TPU and better support with Torchscript.
+Highlights</p>
+
+<h2 id="morphological-operators">Morphological Operators</h2>
+
+<p>As a highlight we include a kornia.morphology that implements several functionalities to work with morphological operators on high-dimensional tensors and differentiability. Contributed by @Juclique</p>
+
+<p>Morphology implements the following methods: dilation, erosion, open, close, close, gradient, top_hat and black_hat.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">kornia</span> <span class="kn">import</span> <span class="n">morphology</span> <span class="k">as</span> <span class="n">morph</span>
+
+<span class="n">dilated_image</span> <span class="o">=</span> <span class="n">morph</span><span class="p">.</span><span class="n">dilation</span><span class="p">(</span><span class="n">tensor</span><span class="p">,</span> <span class="n">kernel</span><span class="p">)</span> <span class="c1"># Dilation
+</span><span class="n">plot_morph_image</span><span class="p">(</span><span class="n">dilated_image</span><span class="p">)</span> <span class="c1"># Plot
+</span></code></pre></div></div>
+<p><img src="%22https://user-images.githubusercontent.com/5157099/111034527-73b01a80-8416-11eb-9012-976db14ef826.png%22" alt=""></p>
+
+<p>See a full tutorial here: https://github.com/kornia/tutorials/blob/master/source/morphology_101.ipynb</p>
+
+<h2 id="deep-descriptors">Deep Descriptors</h2>
+
+<p>We have added a set of local feature-related models: MKDDescriptor #841 by implemented and ported to kornia by @manyids2; also we ported TFeat, AffNet, OriNet from authors repos #846.</p>
+
+<p>Here is notebook, showing the usage and benefits of new features. We also show how to seamlessly integrate kornia and opencv code via new conversion library kornia_moons.</p>
+
+<p>Also: exposed set_laf_orientation function #869</p>
+
+<p><img src="%22https://user-images.githubusercontent.com/4803565/111051654-19827a00-8455-11eb-9edd-d965f3446088.png%22" alt=""></p>
+
+<h2 id="video-augmentations">Video Augmentations</h2>
+
+<p>We include a new operator to perform augmentations with videos VideoSequential. The module is based in nn.Sequential and has the ability to concatenate our existing kornia.augmentations for multi-dimensional video tensors. Contributed by @shijianjian</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">kornia</span>
+<span class="kn">import</span> <span class="nn">torchvision</span>
+
+<span class="n">clip</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">torchvision</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">read_video</span><span class="p">(</span><span class="s">"drop.avi"</span><span class="p">)</span>
+<span class="n">clip</span> <span class="o">=</span> <span class="n">clip</span><span class="p">.</span><span class="n">permute</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)[</span><span class="bp">None</span><span class="p">]</span> <span class="o">/</span> <span class="mf">255.</span>  <span class="c1"># To BCTHW
+</span><span class="nb">input</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">).</span><span class="n">repeat</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">aug_list</span> <span class="o">=</span> <span class="n">VideoSequential</span><span class="p">(</span>
+    <span class="n">kornia</span><span class="p">.</span><span class="n">augmentation</span><span class="p">.</span><span class="n">ColorJitter</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">1.0</span><span class="p">),</span>
+    <span class="n">kornia</span><span class="p">.</span><span class="n">augmentation</span><span class="p">.</span><span class="n">RandomAffine</span><span class="p">(</span><span class="mi">360</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">1.0</span><span class="p">),</span>
+    <span class="n">data_format</span><span class="o">=</span><span class="s">"BTCHW"</span><span class="p">,</span>
+    <span class="n">same_on_frame</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">out</span> <span class="o">=</span> <span class="n">aug</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="%22https://user-images.githubusercontent.com/5157099/111078400-7c2b5280-84f5-11eb-854f-71c5e87bc4c3.png%22" alt=""></p>
+
+<p>See a full example in the following Colab:
+https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sharing</p>
+
+<h2 id="draw-functions">Draw functions</h2>
+
+<p>We include an experimental functionality draw rectangle implemented in pure torch.tensor. Contributed by @mmathew23</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rects</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">tensor</span><span class="p">([[[</span><span class="mf">110.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">,</span> <span class="mf">310.</span><span class="p">,</span> <span class="mf">275.</span><span class="p">],</span> <span class="p">[</span><span class="mf">325.</span><span class="p">,</span> <span class="mf">100.</span><span class="p">,</span> <span class="mf">435.</span><span class="p">,</span> <span class="mf">275.</span><span class="p">]]])</span>
+<span class="n">color</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">255.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">])</span>
+
+<span class="n">x_out</span> <span class="o">=</span> <span class="n">K</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">draw_rectangle</span><span class="p">(</span><span class="n">x_rgb</span><span class="p">,</span> <span class="n">rects</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="%22https://user-images.githubusercontent.com/5157099/111036305-e2917180-841e-11eb-8884-2e4d89177fe8.png%22" alt=""></p>
+
+<p>See full example here: https://colab.research.google.com/drive/1me_DxgMvsHIheLh-Pao7rmrsafKO5Lg3?usp=sharing</p>
+
+<h2 id="more-user-contrib">More user contrib</h2>
+
+<ul>
+  <li>binary_focal_loss_with_logits #830 by @xen0f0n</li>
+  <li>rgb_to_lab #823 by @cceyda</li>
+  <li>GaussianBlur augmentation #773 by @ZhiyuanChen</li>
+  <li>get_gaussian_erf_kernel1d, get_gaussian_discrete #736 by @wyli</li>
+  <li>equalize_clahe #895 by @lferraz</li>
+  <li>blur_pool2d #894 by @shijianjian</li>
+  <li>get_tps_transform, warp_points_tps, warp_image_tps #897 by @catalys1</li>
+  <li>elastic transform 2d #853 by @IssamLaradji @edgarriba</li>
+</ul>
+
+<h2 id="infrastructure">Infrastructure</h2>
+
+<ul>
+  <li>Update CI to pytorch 1.7.x and 1.8.0 @edgarriba</li>
+  <li>Improve testing matrix with different versions</li>
+  <li>TPU support @edgarriba @shijianjian</li>
+  <li>Better JIT support @edgarriba @shijianjian @ducha-aiki</li>
+  <li>Improved and test docs @shijianjian @edgarriba</li>
+</ul>
+
+<h2 id="deprecations">Deprecations</h2>
+
+<ul>
+  <li>Deprecated kornia.geometry.warp module.
+    <ul>
+      <li>DepthWarper is now in kornia.geometry.depth</li>
+      <li>HomographyWarper and related functions are now inside kornia.geometry.transform.</li>
+    </ul>
+  </li>
+  <li>Deprecated kornia.contrib module.
+    <ul>
+      <li>max_pool_blurd2d is now in kornia.filters</li>
+    </ul>
+  </li>
+  <li>Dropped support of Pytorch 1.5.1 #854</li>
+</ul>
+
+<h3 id="warp-and-crop">Warp and Crop</h3>
+
+<p>We refactored the interface of the functions warp_perspective, warp_affine, center_crop, crop_and_resize and crop_by_boxes in order to expose to the user the needed parameters by grid_sample [mode, padding_mode, align_corners]. #896</p>
+
+<p>The param align_corners has been set by default to None that maps to True in case the user does not specify.
+This comes from the motivation to match the behavior of the warping functions with OpenCV.</p>
+
+<p>Example of <code class="language-plaintext highlighter-rouge">warp_perspective</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">warp_perspective</span><span class="p">(</span><span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">M</span><span class="p">:</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+                     <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s">'bilinear'</span><span class="p">,</span> <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s">'zeros'</span><span class="p">,</span>
+                     <span class="n">align_corners</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">Tensor</span><span class="p">:</span>
+</code></pre></div></div>
+<p>Please review the full release notes here: https://github.com/kornia/kornia/blob/master/CHANGELOG.md</p>
+
+<p>Thanks to all our contributors !!! <img class="emoji" title=":sunglasses:" alt=":sunglasses:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png" height="20" width="20"></p>
+
+  </div>
+<a class="u-url" href="/kornia-blog/release/2021/04/06/kornia-release-v050.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/kornia-blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/kornia-blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/kornia-blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>The blog to backprop the pixels to the future.</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+<ul class="social-media-list">
+<li><a rel="me" href="https://github.com/kornia" title="kornia"><svg class="svg-icon grey"><use xlink:href="/kornia-blog/assets/minima-social-icons.svg#github"></use></svg></a></li>
+<li><a rel="me" href="https://twitter.com/kornia_foss" title="kornia_foss"><svg class="svg-icon grey"><use xlink:href="/kornia-blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
