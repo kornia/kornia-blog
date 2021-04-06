@@ -120,14 +120,13 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In this release we have focus in bringing more classic Computer Vision functionalities to the PyTorch ecosystem, like morphological operators and more diversity with Deep Local Descriptors, color conversions and drawing functions. In addition, we have worked towards improving the integration with TPU and better support with Torchscript.
-Highlights</p>
+    <p>In this release we have focus in bringing more classic Computer Vision functionalities to the PyTorch ecosystem, like morphological operators and more diversity with Deep Local Descriptors, color conversions and drawing functions. In addition, we have worked towards improving the integration with TPU and better support with Torchscript.</p>
 
 <h2 id="morphological-operators">Morphological Operators</h2>
 
-<p>As a highlight we include a kornia.morphology that implements several functionalities to work with morphological operators on high-dimensional tensors and differentiability. Contributed by @Juclique</p>
+<p>As a highlight we include a <a href="https://kornia.readthedocs.io/en/latest/morphology.html"><code class="language-plaintext highlighter-rouge">kornia.morphology</code></a> that implements several functionalities to work with morphological operators on high-dimensional tensors and differentiability. Contributed by <a href="https://github.com/Juclique">@Juclique</a></p>
 
-<p>Morphology implements the following methods: dilation, erosion, open, close, close, gradient, top_hat and black_hat.</p>
+<p>Morphology implements the following methods: <code class="language-plaintext highlighter-rouge">dilation</code>, <code class="language-plaintext highlighter-rouge">erosion</code>, <code class="language-plaintext highlighter-rouge">open</code>, <code class="language-plaintext highlighter-rouge">close</code>, <code class="language-plaintext highlighter-rouge">close</code>, <code class="language-plaintext highlighter-rouge">gradient</code>, <code class="language-plaintext highlighter-rouge">top_hat</code> and <code class="language-plaintext highlighter-rouge">black_hat</code>.</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">kornia</span> <span class="kn">import</span> <span class="n">morphology</span> <span class="k">as</span> <span class="n">morph</span>
 
@@ -136,21 +135,22 @@ Highlights</p>
 </span></code></pre></div></div>
 <p><img src="/kornia-blog/images/morphology_cats.png" alt=""></p>
 
-<p>See a full tutorial here: https://github.com/kornia/tutorials/blob/master/source/morphology_101.ipynb</p>
+<p>See a full tutorial here:
+<a href="https://github.com/kornia/tutorials/blob/master/source/morphology_101.ipynb">https://github.com/kornia/tutorials/blob/master/source/morphology_101.ipynb</a></p>
 
 <h2 id="deep-descriptors">Deep Descriptors</h2>
 
-<p>We have added a set of local feature-related models: MKDDescriptor #841 by implemented and ported to kornia by @manyids2; also we ported TFeat, AffNet, OriNet from authors repos #846.</p>
+<p>We have added a set of local feature-related models: <code class="language-plaintext highlighter-rouge">MKDDescriptor</code> #841 by implemented and ported to kornia by <a href="https://github.com/manyids2">@manyids2</a>; also we ported <code class="language-plaintext highlighter-rouge">TFeat</code>, <code class="language-plaintext highlighter-rouge">AffNet</code>, <code class="language-plaintext highlighter-rouge">OriNet</code> from authors repos #846.</p>
 
-<p>Here is notebook, showing the usage and benefits of new features. We also show how to seamlessly integrate kornia and opencv code via new conversion library kornia_moons.</p>
+<p>Here is <a href="https://github.com/kornia/kornia-examples/blob/master/MKD_TFeat_descriptors_in_kornia.ipynb">notebook</a>, showing the usage and benefits of new features. We also show how to seamlessly integrate kornia and opencv code via new conversion library <a href="https://github.com/ducha-aiki/kornia_moons"><code class="language-plaintext highlighter-rouge">kornia_moons</code></a>.</p>
 
-<p>Also: exposed set_laf_orientation function #869</p>
+<p>Also: exposed <code class="language-plaintext highlighter-rouge">set_laf_orientation</code> function #869</p>
 
 <p><img src="/kornia-blog/images/deep_matching.png" alt=""></p>
 
 <h2 id="video-augmentations">Video Augmentations</h2>
 
-<p>We include a new operator to perform augmentations with videos VideoSequential. The module is based in nn.Sequential and has the ability to concatenate our existing kornia.augmentations for multi-dimensional video tensors. Contributed by @shijianjian</p>
+<p>We include a new operator to perform augmentations with videos <a href="https://kornia.readthedocs.io/en/latest/augmentation.container.html#video-data-augmentation"><code class="language-plaintext highlighter-rouge">VideoSequential</code></a>. The module is based in <code class="language-plaintext highlighter-rouge">nn.Sequential</code> and has the ability to concatenate our existing <a href="https://kornia.readthedocs.io/en/latest/augmentation.html"><code class="language-plaintext highlighter-rouge">kornia.augmentations</code></a> for multi-dimensional video tensors. Contributed by <a href="https://github.com/shijianjian">@shijianjian</a></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">kornia</span>
 <span class="kn">import</span> <span class="nn">torchvision</span>
@@ -171,11 +171,11 @@ Highlights</p>
 <p><img src="/kornia-blog/images/video_sequential.png" alt=""></p>
 
 <p>See a full example in the following Colab:
-https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sharing</p>
+<a href="https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sharing">https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sharing</a></p>
 
 <h2 id="draw-functions">Draw functions</h2>
 
-<p>We include an experimental functionality draw rectangle implemented in pure torch.tensor. Contributed by @mmathew23</p>
+<p>We include an experimental functionality <a href="https://kornia.readthedocs.io/en/latest/utils.html#kornia.utils.draw_rectangle"><code class="language-plaintext highlighter-rouge">draw_rectangle</code></a> implemented in pure <code class="language-plaintext highlighter-rouge">torch.tensor</code>. Contributed by <a href="https://github.com/mmathew23">@mmathew23</a></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rects</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">tensor</span><span class="p">([[[</span><span class="mf">110.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">,</span> <span class="mf">310.</span><span class="p">,</span> <span class="mf">275.</span><span class="p">],</span> <span class="p">[</span><span class="mf">325.</span><span class="p">,</span> <span class="mf">100.</span><span class="p">,</span> <span class="mf">435.</span><span class="p">,</span> <span class="mf">275.</span><span class="p">]]])</span>
 <span class="n">color</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">255.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">])</span>
@@ -184,43 +184,68 @@ https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sh
 </code></pre></div></div>
 <p><img src="/kornia-blog/images/draw_rectangle.png" alt=""></p>
 
-<p>See full example here: https://colab.research.google.com/drive/1me_DxgMvsHIheLh-Pao7rmrsafKO5Lg3?usp=sharing</p>
+<p>See full example here:
+<a href="https://colab.research.google.com/drive/1me_DxgMvsHIheLh-Pao7rmrsafKO5Lg3?usp=sharing">https://colab.research.google.com/drive/1me_DxgMvsHIheLh-Pao7rmrsafKO5Lg3?usp=sharing</a></p>
 
 <h2 id="more-user-contrib">More user contrib</h2>
 
 <ul>
-  <li>binary_focal_loss_with_logits #830 by @xen0f0n</li>
-  <li>rgb_to_lab #823 by @cceyda</li>
-  <li>GaussianBlur augmentation #773 by @ZhiyuanChen</li>
-  <li>get_gaussian_erf_kernel1d, get_gaussian_discrete #736 by @wyli</li>
-  <li>equalize_clahe #895 by @lferraz</li>
-  <li>blur_pool2d #894 by @shijianjian</li>
-  <li>get_tps_transform, warp_points_tps, warp_image_tps #897 by @catalys1</li>
-  <li>elastic transform 2d #853 by @IssamLaradji @edgarriba</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">binary_focal_loss_with_logits</code> #830 by <a href="https://github.com/xen0f0n">@xen0f0n</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">rgb_to_lab</code> #823 by <a href="https://github.com/cceyda">@cceyda</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">GaussianBlur</code> augmentation #773 by <a href="https://github.com/ZhiyuanChen">@ZhiyuanChen</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">get_gaussian_erf_kernel1d</code>, <code class="language-plaintext highlighter-rouge">get_gaussian_discrete</code> #736 by <a href="https://github.com/wyli">@wyli</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">equalize_clahe</code> #895 by <a href="https://github.com/lferraz">@lferraz</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">blur_pool2d</code> #894 by <a href="https://github.com/shijianjian">@shijianjian</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">get_tps_transform</code>, <code class="language-plaintext highlighter-rouge">warp_points_tps</code>, <code class="language-plaintext highlighter-rouge">warp_image_tps</code> #897 by <a href="https://github.com/catalys1">@catalys1</a>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">elastic_transform_2d</code> #853 by <a href="https://github.com/IssamLaradji">@IssamLaradji</a> <a href="https://github.com/edgarriba">@edgarriba</a>
+</li>
 </ul>
 
 <h2 id="infrastructure">Infrastructure</h2>
 
 <ul>
-  <li>Update CI to pytorch 1.7.x and 1.8.0 @edgarriba</li>
+  <li>Update CI to pytorch 1.7.x and 1.8.0 <a href="https://github.com/edgarriba">@edgarriba</a>
+</li>
   <li>Improve testing matrix with different versions</li>
-  <li>TPU support @edgarriba @shijianjian</li>
-  <li>Better JIT support @edgarriba @shijianjian @ducha-aiki</li>
-  <li>Improved and test docs @shijianjian @edgarriba</li>
+  <li>TPU support <a href="https://github.com/edgarriba">@edgarriba</a> <a href="https://github.com/shijianjian">@shijianjian</a>
+</li>
+  <li>Better JIT support <a href="https://github.com/edgarriba">@edgarriba</a> @shijianjian @ducha-aiki</li>
+  <li>Improved and test docs <a href="https://github.com/shijianjian">@shijianjian</a> <a href="https://github.com/edgarriba">@edgarriba</a>
+</li>
 </ul>
 
 <h2 id="deprecations">Deprecations</h2>
 
 <ul>
-  <li>Deprecated kornia.geometry.warp module.
+  <li>Deprecated <code class="language-plaintext highlighter-rouge">kornia.geometry.warp</code> module.
     <ul>
-      <li>DepthWarper is now in kornia.geometry.depth</li>
-      <li>HomographyWarper and related functions are now inside kornia.geometry.transform.</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">DepthWarper</code> is now in <code class="language-plaintext highlighter-rouge">kornia.geometry.depth</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">HomographyWarper</code> and related functions are now inside <code class="language-plaintext highlighter-rouge">kornia.geometry.transform</code>.</li>
     </ul>
   </li>
-  <li>Deprecated kornia.contrib module.
+  <li>Deprecated <code class="language-plaintext highlighter-rouge">kornia.contrib module</code>.
     <ul>
-      <li>max_pool_blurd2d is now in kornia.filters</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">max_pool_blurd2d</code> is now in <code class="language-plaintext highlighter-rouge">kornia.filters</code>
+</li>
     </ul>
   </li>
   <li>Dropped support of Pytorch 1.5.1 #854</li>
@@ -228,7 +253,7 @@ https://colab.research.google.com/drive/12dmHNkvEQrG-PHElbCXT9FgCr_aAGQSI?usp=sh
 
 <h3 id="warp-and-crop">Warp and Crop</h3>
 
-<p>We refactored the interface of the functions warp_perspective, warp_affine, center_crop, crop_and_resize and crop_by_boxes in order to expose to the user the needed parameters by grid_sample [mode, padding_mode, align_corners]. #896</p>
+<p>We refactored the interface of the functions <code class="language-plaintext highlighter-rouge">warp_perspective</code>, <code class="language-plaintext highlighter-rouge">warp_affine</code>, <code class="language-plaintext highlighter-rouge">center_crop</code>, <code class="language-plaintext highlighter-rouge">crop_and_resize</code> and <code class="language-plaintext highlighter-rouge">crop_by_boxes</code> in order to expose to the user the needed parameters by <code class="language-plaintext highlighter-rouge">grid_sample</code> [<code class="language-plaintext highlighter-rouge">mode</code>, <code class="language-plaintext highlighter-rouge">padding_mode</code>, <code class="language-plaintext highlighter-rouge">align_corners</code>]. #896</p>
 
 <p>The param align_corners has been set by default to None that maps to True in case the user does not specify.
 This comes from the motivation to match the behavior of the warping functions with OpenCV.</p>
