@@ -14,13 +14,31 @@ title: Kornia 0.5.5 release
 - Random selection for the augmentation containers
 - Bug fixes
 
-Checkout the release notes to discover more about our contributors
+### [0.5.5] - 2021-06-27
 
-[https://github.com/kornia/kornia/releases/tag/0.5.5](https://github.com/kornia/kornia/releases/tag/0.5.5)
+### Added
+- Added Stereo camera class ([#1102](https://github.com/kornia/kornia/pull/1102))
+- Added auto-generated images in docs ([#1105](https://github.com/kornia/kornia/pull/1105)) ([#1108](https://github.com/kornia/kornia/pull/1108)) ([#1127](https://github.com/kornia/kornia/pull/1127)) ([#1128](https://github.com/kornia/kornia/pull/1128)) ([#1129](https://github.com/kornia/kornia/pull/1129)) ([#1131](https://github.com/kornia/kornia/pull/1131))
+- Added chinese version README ([#1112](https://github.com/kornia/kornia/pull/1112))
+- Added random_apply to augmentaton containers ([#1125](https://github.com/kornia/kornia/pull/1125))
+
+### Changed
+- Change GaussianBlur to RandomGaussianBlur ([#1118](https://github.com/kornia/kornia/pull/1118))
+- Update ci with pytorch 1.9.0 ([#1120](https://github.com/kornia/kornia/pull/1120))
+- Changed option for mean and std to be tuples in normalization ([#987](https://github.com/kornia/kornia/pull/987))
+- Adopt torch.testing.assert_close ([#1031](https://github.com/kornia/kornia/pull/1031)) 
+
+### Removed
+- Remove numpy import ([#1116](https://github.com/kornia/kornia/pull/1116))
+
+### Contributors
+@copaah @ducha-aiki @edgarriba @eugene87222 @JoanFM @justanhduc @pmeier @shijianjian 
 
 In addition, we are revamping our online documentation by adding as much as visual examples to each functionality.
 
 Visit our documentation here: [https://kornia.readthedocs.io/en/latest/enhance.html](https://kornia.readthedocs.io/en/latest/enhance.html)
+
+------
 
 👉 Feel free to reach us for collaborations
 
@@ -32,4 +50,8 @@ Follow us in Twitter 🐦 [https://twitter.com/kornia_foss](https://twitter.com/
 
 Donate (@opencollective) 🙏 [https://opencollective.com/kornia](https://opencollective.com/kornia) 🙏
 
-[#computervision]() [#opensource]() [#deeplearning]() [#pytorch]()
+------
+
+Have a happy coding day :sunglasses:
+
+**The Kornia team**
