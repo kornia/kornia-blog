@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-06-28T03:44:36-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-06-28T03:46:15-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Support for PyTorch 1.9.0&lt;/li&gt;
@@ -7,8 +7,7 @@
   &lt;li&gt;Bug fixes&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;055---2021-06-27&quot;&gt;[0.5.5] - 2021-06-27&lt;/h3&gt;
-
+&lt;h3 id=&quot;changelog&quot;&gt;CHANGELOG&lt;/h3&gt;
 &lt;h3 id=&quot;added&quot;&gt;Added&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;Added Stereo camera class (&lt;a href=&quot;https://github.com/kornia/kornia/pull/1102&quot;&gt;#1102&lt;/a&gt;)&lt;/li&gt;
