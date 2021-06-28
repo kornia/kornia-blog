@@ -14,8 +14,7 @@ title: Kornia 0.5.5 release
 - Random selection for the augmentation containers
 - Bug fixes
 
-### [0.5.5] - 2021-06-27
-
+### CHANGELOG
 ### Added
 - Added Stereo camera class ([#1102](https://github.com/kornia/kornia/pull/1102))
 - Added auto-generated images in docs ([#1105](https://github.com/kornia/kornia/pull/1105)) ([#1108](https://github.com/kornia/kornia/pull/1108)) ([#1127](https://github.com/kornia/kornia/pull/1127)) ([#1128](https://github.com/kornia/kornia/pull/1128)) ([#1129](https://github.com/kornia/kornia/pull/1129)) ([#1131](https://github.com/kornia/kornia/pull/1131))
