@@ -15,17 +15,21 @@ title: Kornia 0.5.5 release
 - Bug fixes
 
 Checkout the release notes to discover more about our contributors
-https://github.com/kornia/kornia/releases/tag/0.5.5
+
+[https://github.com/kornia/kornia/releases/tag/0.5.5](https://github.com/kornia/kornia/releases/tag/0.5.5)
 
 In addition, we are revamping our online documentation by adding as much as visual examples to each functionality.
 
-Visit our documentation here: https://kornia.readthedocs.io/en/latest/enhance.html
+Visit our documentation here: [https://kornia.readthedocs.io/en/latest/enhance.html](https://kornia.readthedocs.io/en/latest/enhance.html)
 
 👉 Feel free to reach us for collaborations
 
-Visit our website 🚀 www.kornia.org 🚀
-Give us a star in Github ⭐️ https://github.com/kornia/kornia/stargazers ⭐️
-Follow us in Twitter 🐦 https://twitter.com/kornia_foss 🐦
-Donate (@opencollective) 🙏 https://opencollective.com/kornia 🙏
+Visit our website 🚀 [www.kornia.org](www.kornia.org) 🚀
 
-#computervision #opensource #deeplearning #pytorch
+Give us a star in Github ⭐️ [https://github.com/kornia/kornia/stargazers](https://github.com/kornia/kornia/stargazers) ⭐️
+
+Follow us in Twitter 🐦 [https://twitter.com/kornia_foss](https://twitter.com/kornia_foss) 🐦
+
+Donate (@opencollective) 🙏 [https://opencollective.com/kornia](https://opencollective.com/kornia) 🙏
+
+[#computervision]() [#opensource]() [#deeplearning]() [#pytorch]()
