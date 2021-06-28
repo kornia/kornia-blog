@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-06-28T03:34:35-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-06-28T03:40:15-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Support for PyTorch 1.9.0&lt;/li&gt;
@@ -7,21 +7,25 @@
   &lt;li&gt;Bug fixes&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Checkout the release notes to discover more about our contributors
-https://github.com/kornia/kornia/releases/tag/0.5.5&lt;/p&gt;
+&lt;p&gt;Checkout the release notes to discover more about our contributors&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kornia/kornia/releases/tag/0.5.5&quot;&gt;https://github.com/kornia/kornia/releases/tag/0.5.5&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In addition, we are revamping our online documentation by adding as much as visual examples to each functionality.&lt;/p&gt;
 
-&lt;p&gt;Visit our documentation here: https://kornia.readthedocs.io/en/latest/enhance.html&lt;/p&gt;
+&lt;p&gt;Visit our documentation here: &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/enhance.html&quot;&gt;https://kornia.readthedocs.io/en/latest/enhance.html&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;👉 Feel free to reach us for collaborations&lt;/p&gt;
 
-&lt;p&gt;Visit our website 🚀 www.kornia.org 🚀
-Give us a star in Github ⭐️ https://github.com/kornia/kornia/stargazers ⭐️
-Follow us in Twitter 🐦 https://twitter.com/kornia_foss 🐦
-Donate (@opencollective) 🙏 https://opencollective.com/kornia 🙏&lt;/p&gt;
+&lt;p&gt;Visit our website 🚀 &lt;a href=&quot;www.kornia.org&quot;&gt;www.kornia.org&lt;/a&gt; 🚀&lt;/p&gt;
 
-&lt;p&gt;#computervision #opensource #deeplearning #pytorch&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia team is happy to announce the release for v0.5.5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Roadmap Kornia v0.6.0 !</title><link href="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html" rel="alternate" type="text/html" title="Roadmap Kornia v0.6.0 !" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060</id><content type="html" xml:base="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html">&lt;h2 id=&quot;roadmap-kornia-v060-announcement&quot;&gt;Roadmap Kornia v0.6.0 announcement&lt;/h2&gt;
+&lt;p&gt;Give us a star in Github ⭐️ &lt;a href=&quot;https://github.com/kornia/kornia/stargazers&quot;&gt;https://github.com/kornia/kornia/stargazers&lt;/a&gt; ⭐️&lt;/p&gt;
+
+&lt;p&gt;Follow us in Twitter 🐦 &lt;a href=&quot;https://twitter.com/kornia_foss&quot;&gt;https://twitter.com/kornia_foss&lt;/a&gt; 🐦&lt;/p&gt;
+
+&lt;p&gt;Donate (@opencollective) 🙏 &lt;a href=&quot;https://opencollective.com/kornia&quot;&gt;https://opencollective.com/kornia&lt;/a&gt; 🙏&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot;&gt;#computervision&lt;/a&gt; &lt;a href=&quot;&quot;&gt;#opensource&lt;/a&gt; &lt;a href=&quot;&quot;&gt;#deeplearning&lt;/a&gt; &lt;a href=&quot;&quot;&gt;#pytorch&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia team is happy to announce the release for v0.5.5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Roadmap Kornia v0.6.0 !</title><link href="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html" rel="alternate" type="text/html" title="Roadmap Kornia v0.6.0 !" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060</id><content type="html" xml:base="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html">&lt;h2 id=&quot;roadmap-kornia-v060-announcement&quot;&gt;Roadmap Kornia v0.6.0 announcement&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_banner.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
