@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-05-20T17:29:17-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Roadmap Kornia v0.6.0 !</title><link href="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html" rel="alternate" type="text/html" title="Roadmap Kornia v0.6.0 !" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060</id><content type="html" xml:base="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html">&lt;h2 id=&quot;roadmap-kornia-v060-announcement&quot;&gt;Roadmap Kornia v0.6.0 announcement&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-06-28T03:34:35-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support for PyTorch 1.9.0&lt;/li&gt;
+  &lt;li&gt;Interface for Stereo Camera manipulation&lt;/li&gt;
+  &lt;li&gt;Random selection for the augmentation containers&lt;/li&gt;
+  &lt;li&gt;Bug fixes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Checkout the release notes to discover more about our contributors
+https://github.com/kornia/kornia/releases/tag/0.5.5&lt;/p&gt;
+
+&lt;p&gt;In addition, we are revamping our online documentation by adding as much as visual examples to each functionality.&lt;/p&gt;
+
+&lt;p&gt;Visit our documentation here: https://kornia.readthedocs.io/en/latest/enhance.html&lt;/p&gt;
+
+&lt;p&gt;👉 Feel free to reach us for collaborations&lt;/p&gt;
+
+&lt;p&gt;Visit our website 🚀 www.kornia.org 🚀
+Give us a star in Github ⭐️ https://github.com/kornia/kornia/stargazers ⭐️
+Follow us in Twitter 🐦 https://twitter.com/kornia_foss 🐦
+Donate (@opencollective) 🙏 https://opencollective.com/kornia 🙏&lt;/p&gt;
+
+&lt;p&gt;#computervision #opensource #deeplearning #pytorch&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia team is happy to announce the release for v0.5.5.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Roadmap Kornia v0.6.0 !</title><link href="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html" rel="alternate" type="text/html" title="Roadmap Kornia v0.6.0 !" /><published>2021-04-06T00:00:00-05:00</published><updated>2021-04-06T00:00:00-05:00</updated><id>/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060</id><content type="html" xml:base="/kornia-blog/community/announcement/2021/04/06/kornia-roadmap-v060.html">&lt;h2 id=&quot;roadmap-kornia-v060-announcement&quot;&gt;Roadmap Kornia v0.6.0 announcement&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_banner.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -587,115 +610,4 @@ This comes from the motivation to match the behavior of the warping functions wi
 
 &lt;p&gt;Kornia is an open source Computer Vision library for PyTorch. More information on the projecte here: &lt;a href=&quot;https://kornia.org/&quot;&gt;https://kornia.org&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Any queries must be directed to &lt;a href=&quot;edgar.riba@osvf.org&quot;&gt;edgar.riba@osvf.org&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/poster_hackathon_kornia.jpg" /><media:content medium="image" url="/kornia-blog/images/poster_hackathon_kornia.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Kornia 0.1.4 release</title><link href="/kornia-blog/release/2019/10/27/kornia-release-v014.html" rel="alternate" type="text/html" title="Kornia 0.1.4 release" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>/kornia-blog/release/2019/10/27/kornia-release-v014</id><content type="html" xml:base="/kornia-blog/release/2019/10/27/kornia-release-v014.html">&lt;p&gt;We have just released &lt;strong&gt;Kornia: a differentiable computer vision library for PyTorch&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;It consists of a set of routines and differentiable modules to solve generic computer vision problems. At its core, the package uses PyTorch as its main backend both for efficiency and to take advantage of the reverse-mode auto-differentiation to define and compute the gradient of complex functions.&lt;/p&gt;
-
-&lt;p&gt;Inspired by OpenCV, this library is composed by a subset of packages containing operators that can be inserted within neural networks to train models to perform image transformations, epipolar geometry, depth estimation, and low level image processing such as filtering and edge detection that operate directly on tensors.&lt;/p&gt;
-
-&lt;p&gt;It has over 300 commits and majorly refactors the whole library including over than 100 functions to solve generic Computer Vision problems.&lt;/p&gt;
-
-&lt;h1 id=&quot;highlights&quot;&gt;Highlights&lt;/h1&gt;
-
-&lt;p&gt;Version 0.1.4 includes a reorganization of the internal API grouping functionalities that consists of the following components:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a Differentiable Computer Vision library like OpenCV, with strong GPU support.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.color&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a set of routines to perform color space conversions.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.contrib&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a compilation of user contrib and experimental operators.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.feature&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a module to perform local feature detection.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.filters&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a module to perform image filtering and edge detection.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.geometry&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a geometric computer vision library to perform image transformations, 3D linear algebra and conversions using differen camera models.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.losses&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;a stack of loss functions to solve different vision tasks.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;kornia.utils&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;image to tensor utilities and metrics for vision problems.&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Big contribution in &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/feature.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kornia.features&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Implemented anti-aliased local patch extraction.&lt;/li&gt;
-  &lt;li&gt;Implemented classical local features cornerness functions: Harris, Hessian, Good Features To Track.&lt;/li&gt;
-  &lt;li&gt;Implemented basic functions for work with local affine features and their patches.&lt;/li&gt;
-  &lt;li&gt;Implemented convolutional soft argmax 2d and 3d operators for differentable non-maxima suppression.&lt;/li&gt;
-  &lt;li&gt;implemented second moment matrix affine shape estimation, dominant gradient orientation and SIFT patch descriptor.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Please, do not hesitate to check the &lt;a href=&quot;https://github.com/kornia/kornia/releases/tag/v0.1.4&quot;&gt;release notes&lt;/a&gt; on GitHub to learn about the new library features and get more details.&lt;/p&gt;
-
-&lt;p&gt;Have a happy coding day :sunglasses:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">We have just released Kornia: a differentiable computer vision library for PyTorch.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;Any queries must be directed to &lt;a href=&quot;edgar.riba@osvf.org&quot;&gt;edgar.riba@osvf.org&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/poster_hackathon_kornia.jpg" /><media:content medium="image" url="/kornia-blog/images/poster_hackathon_kornia.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
