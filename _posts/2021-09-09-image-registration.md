@@ -14,8 +14,8 @@ to help developers and researchers create innovative applicationsfor Computer Vi
 
 ![]({{ site.baseurl }}/images/kornia_logo.png)
 
-The first release in that direction is our [ImageRegistration](https://kornia.readthedocs.io/en/latest/geometry.transform.html#kornia.geometry.transform.image_registrator.ImageRegistrator) 
-PI that leverages PyTorch Autograd engine and the GPU power to solve by direct optimization the problem of aligning two images on the fly.
+The first release in that direction is our [ImageRegistration](https://kornia.readthedocs.io/en/latest/geometry.transform.html#kornia.geometry.transform.image_registrator.ImageRegistrator) API that leverages PyTorch Autograd engine and the
+GPU power to solve by direct optimization the problem of aligning two images on the fly.
 
 ```python
 import kornia.geometry as KG
@@ -35,7 +35,7 @@ Learn more @ Papers with Code: [https://paperswithcode.com/task/image-registrati
 Finally, in order to create a more advanced application e.g. for computational photography you can refer to our [documentation](https://kornia.readthedocs.io/en/latest/tasks.html)
 and [tutorials](https://kornia-tutorials.readthedocs.io/en/latest/image_registration.html).
 
-{% include youtube.html content='https://www.youtube.com/embed/I-g3EhBIsDs' %}
+{% include youtube.html content='https://www.youtube.com/embed/Re1q6vRfZac' %}
 
 Stay tuned for upcoming news and projects around the #kornia universe.
 
