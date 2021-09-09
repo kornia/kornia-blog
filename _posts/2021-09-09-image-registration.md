@@ -7,7 +7,7 @@ categories: [announcement]
 title:  Image Registration with Kornia and PyTorch in the GPU 
 ---
 
-Dear Computer Vision community,
+Dear kornians,
 
 As previously announced, we are starting to include more high level APIs in [Kornia](https://kornia.readthedocs.io/en/latest/tasks.html)
 to help developers and researchers create innovative applicationsfor Computer Vision.
@@ -35,16 +35,18 @@ Learn more @ Papers with Code: [https://paperswithcode.com/task/image-registrati
 Finally, in order to create a more advanced application e.g. for computational photography you can refer to our [documentation](https://kornia.readthedocs.io/en/latest/tasks.html)
 and [tutorials](https://kornia-tutorials.readthedocs.io/en/latest/image_registration.html).
 
-> youtube: https://youtu.be/I-g3EhBIsDs
+{% include youtube.html content='https://www.youtube.com/embed/I-g3EhBIsDs' %}
 
 Stay tuned for upcoming news and projects around the #kornia universe.
 
 -------------------
 
 Visit our website 🚀 [www.kornia.org](www.kornia.org) 🚀
-Give us a star in Github ⭐️ [https://github.com/kornia/kornia/stargazers](https://github.com/kornia/kornia/stargazers) ⭐️
-Follow us in Twitter 🐦 [https://twitter.com/kornia_foss](https://twitter.com/kornia_foss) 🐦
-Donate (@opencollective) 🙏 [https://opencollective.com/kornia](https://opencollective.com/kornia) 🙏
-Join our community: [www.librecv.org](www.librecv.org)
 
-#computervision #opensource #deeplearning #pytorch #ai
+Give us a star in Github ⭐️ [https://github.com/kornia/kornia/stargazers](https://github.com/kornia/kornia/stargazers) ⭐️
+
+Follow us in Twitter 🐦 [https://twitter.com/kornia_foss](https://twitter.com/kornia_foss) 🐦
+
+Donate (@opencollective) 🙏 [https://opencollective.com/kornia](https://opencollective.com/kornia) 🙏
+
+Join our community: [www.librecv.org](www.librecv.org)
