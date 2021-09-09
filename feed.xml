@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-09-09T08:34:03-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-09-09T08:40:35-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Kornia 0.5.5 release</title><link href="/kornia-blog/release/2021/06/27/kornia-release-055.html" rel="alternate" type="text/html" title="Kornia 0.5.5 release" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>/kornia-blog/release/2021/06/27/kornia-release-055</id><content type="html" xml:base="/kornia-blog/release/2021/06/27/kornia-release-055.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.5.5.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Support for PyTorch 1.9.0&lt;/li&gt;
@@ -301,7 +301,48 @@ This comes from the motivation to match the behavior of the warping functions wi
 
 &lt;p&gt;Stay tuned and have a happy coding day ! :sunglasses:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><category term="announcement" /><summary type="html">“A long time ago in a galaxy far, far away….”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_planet.png" /><media:content medium="image" url="/kornia-blog/images/kornia_planet.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Kornia v0.4.0 release</title><link href="/kornia-blog/release/2020/08/07/kornia-release-v040.html" rel="alternate" type="text/html" title="Kornia v0.4.0 release" /><published>2020-08-07T00:00:00-05:00</published><updated>2020-08-07T00:00:00-05:00</updated><id>/kornia-blog/release/2020/08/07/kornia-release-v040</id><content type="html" xml:base="/kornia-blog/release/2020/08/07/kornia-release-v040.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.4.0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><category term="announcement" /><summary type="html">“A long time ago in a galaxy far, far away….”</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_planet.png" /><media:content medium="image" url="/kornia-blog/images/kornia_planet.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Image Registration with Kornia and PyTorch in the GPU</title><link href="/kornia-blog/announcement/2020/09/09/image-registration.html" rel="alternate" type="text/html" title="Image Registration with Kornia and PyTorch in the GPU" /><published>2020-09-09T00:00:00-05:00</published><updated>2020-09-09T00:00:00-05:00</updated><id>/kornia-blog/announcement/2020/09/09/image-registration</id><content type="html" xml:base="/kornia-blog/announcement/2020/09/09/image-registration.html">&lt;p&gt;Dear Computer Vision community,&lt;/p&gt;
+
+&lt;p&gt;As previously announced, we are starting to include more high level APIs in &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/tasks.html&quot;&gt;Kornia&lt;/a&gt;
+to help developers and researchers create innovative applicationsfor Computer Vision.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first release in that direction is our &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/geometry.transform.html#kornia.geometry.transform.image_registrator.ImageRegistrator&quot;&gt;ImageRegistration&lt;/a&gt; 
+PI that leverages PyTorch Autograd engine and the GPU power to solve by direct optimization the problem of aligning two images on the fly.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;kornia.geometry&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KG&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;registrator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KG&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ImageRegistrator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'similarity'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registrator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;img1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_intermediate_models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Image registration is the process of transforming different sets of data into one coordinate system. Data may be multiple photographs,
+data from different sensors, times, depths, or viewpoints. It is used in computer vision, medical imaging, and compiling and analyzing
+images and data from satellites. Registration is necessary in order to be able to compare or integrate the data obtained from these different measurements.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/kornia-blog/images/medical_registration.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Learn more @ Papers with Code: &lt;a href=&quot;https://paperswithcode.com/task/image-registration&quot;&gt;https://paperswithcode.com/task/image-registration&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, in order to create a more advanced application e.g. for computational photography you can refer to our &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/tasks.html&quot;&gt;documentation&lt;/a&gt;
+and &lt;a href=&quot;https://kornia-tutorials.readthedocs.io/en/latest/image_registration.html&quot;&gt;tutorials&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;youtube: https://youtu.be/I-g3EhBIsDs&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Stay tuned for upcoming news and projects around the #kornia universe.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Visit our website 🚀 &lt;a href=&quot;www.kornia.org&quot;&gt;www.kornia.org&lt;/a&gt; 🚀
+Give us a star in Github ⭐️ &lt;a href=&quot;https://github.com/kornia/kornia/stargazers&quot;&gt;https://github.com/kornia/kornia/stargazers&lt;/a&gt; ⭐️
+Follow us in Twitter 🐦 &lt;a href=&quot;https://twitter.com/kornia_foss&quot;&gt;https://twitter.com/kornia_foss&lt;/a&gt; 🐦
+Donate (@opencollective) 🙏 &lt;a href=&quot;https://opencollective.com/kornia&quot;&gt;https://opencollective.com/kornia&lt;/a&gt; 🙏
+Join our community: &lt;a href=&quot;www.librecv.org&quot;&gt;www.librecv.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;#computervision #opensource #deeplearning #pytorch #ai&lt;/p&gt;</content><author><name></name></author><category term="announcement" /><summary type="html">Dear Computer Vision community,</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Kornia v0.4.0 release</title><link href="/kornia-blog/release/2020/08/07/kornia-release-v040.html" rel="alternate" type="text/html" title="Kornia v0.4.0 release" /><published>2020-08-07T00:00:00-05:00</published><updated>2020-08-07T00:00:00-05:00</updated><id>/kornia-blog/release/2020/08/07/kornia-release-v040</id><content type="html" xml:base="/kornia-blog/release/2020/08/07/kornia-release-v040.html">&lt;p&gt;&lt;strong&gt;Kornia team&lt;/strong&gt; is happy to announce the release for v0.4.0.&lt;/p&gt;
 
 &lt;p&gt;We are releasing a new version for Kornia that includes different functionalities to work with &lt;strong&gt;3D augmentations&lt;/strong&gt; and &lt;strong&gt;volumetric data&lt;/strong&gt;, &lt;strong&gt;local features matching&lt;/strong&gt;, &lt;strong&gt;homographies&lt;/strong&gt; and &lt;strong&gt;epipolar geometry&lt;/strong&gt;.&lt;/p&gt;
 
@@ -621,24 +662,4 @@ This comes from the motivation to match the behavior of the warping functions wi
 
 &lt;p&gt;Have a happy coding day :sunglasses:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia v0.2.0 release is now available.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Kornia BCN Hackathon 2019</title><link href="/kornia-blog/community/2019/12/14/kornia-hackathon-2019.html" rel="alternate" type="text/html" title="Kornia BCN Hackathon 2019" /><published>2019-12-14T00:00:00-06:00</published><updated>2019-12-14T00:00:00-06:00</updated><id>/kornia-blog/community/2019/12/14/kornia-hackathon-2019</id><content type="html" xml:base="/kornia-blog/community/2019/12/14/kornia-hackathon-2019.html">&lt;p&gt;&lt;img src=&quot;http://www.cvc.uab.es/outreach/wp-content/uploads/2019/11/poster_hackathon_kornia-1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;http://www.cvc.uab.es/&quot;&gt;Computer Vision Center&lt;/a&gt; is hosting the Kornia Hackathon 2019 on December 14th as a satellite event of the &lt;a href=&quot;https://sites.google.com/view/dlbcn2019&quot;&gt;Deep Learning Symposium Barcelona&lt;/a&gt;. The aim of the event is a &lt;strong&gt;hands-on in differentiable computer vision with PyTorch&lt;/strong&gt; session with two of the Kornia project leaders, Edgar Riba and Dmytro Mishkin.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/edgarriba/&quot;&gt;Edgar Riba&lt;/a&gt; is one of the main promoters of Kornia, member of the Open Source Vision foundation and OpenCV technical committee member. He is currently finishing his PhD at the UPC on ‘Geometric Computer Vision and Local Features detection’. On the other hand, &lt;a href=&quot;http://cmp.felk.cvut.cz/~mishkdmy/&quot;&gt;Dmytro Mishkin&lt;/a&gt;, also a Kornia promoter, is currently a PhD student at the Centre for Machine Perception of the Czech Technical University in Prague. Furthermore, Dmytro is the ex-CTO of Clear Research, the co-founder of the Ukrainian Research Group “Szkocka”, co-founder of the Eastern European Computer Vision Conference (EECVC) and Kaggle Master.&lt;/p&gt;
-
-&lt;p&gt;The Hackathon will start at 10.00 and finish at 18.00. The full program will be released soon. The Hackathon is sponsored by &lt;a href=&quot;https://opencv.org/&quot;&gt;OpenCV.org&lt;/a&gt;, the &lt;a href=&quot;http://osvf.org/&quot;&gt;OSVF.org&lt;/a&gt;, the &lt;a href=&quot;http://www.cvc.uab.es/&quot;&gt;Computer Vision Center&lt;/a&gt;, &lt;a href=&quot;https://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt; and &lt;a href=&quot;https://aws.amazon.com/opensource/&quot;&gt;AWS&lt;/a&gt;. All twitter promotion will be available under the hashtag &lt;a href=&quot;https://twitter.com/hashtag/HackathonKornia19?src=hashtag_click&quot;&gt;#HackathonKornia19&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Technical requirements&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A solid knowledge of PyTorch, Computer Vision and Deep Learning would be ideal. All the attendees should bring their own laptop. Internet connection will be provided.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Registration&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Registration is open until December 12th here: &lt;a href=&quot;https://forms.gle/xRGw1k6njDzthRkB6&quot;&gt;https://forms.gle/xRGw1k6njDzthRkB6&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;About Kornia&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Kornia is an open source Computer Vision library for PyTorch. More information on the projecte here: &lt;a href=&quot;https://kornia.org/&quot;&gt;https://kornia.org&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Any queries must be directed to &lt;a href=&quot;edgar.riba@osvf.org&quot;&gt;edgar.riba@osvf.org&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="community" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/poster_hackathon_kornia.jpg" /><media:content medium="image" url="/kornia-blog/images/poster_hackathon_kornia.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;strong&gt;The Kornia team&lt;/strong&gt;&lt;/p&gt;</content><author><name></name></author><category term="release" /><summary type="html">Kornia v0.2.0 release is now available.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/kornia-blog/images/kornia_logo.png" /><media:content medium="image" url="/kornia-blog/images/kornia_logo.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
