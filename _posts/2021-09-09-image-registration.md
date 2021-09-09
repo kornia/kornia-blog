@@ -1,6 +1,6 @@
 ---
 toc: false
-image: images/kornia_logo.png
+image: images/medical_registration.gif
 description: Learn how to align automatically with kornia Image Registration API
 layout: post
 categories: [announcement]
@@ -28,7 +28,7 @@ Image registration is the process of transforming different sets of data into on
 data from different sensors, times, depths, or viewpoints. It is used in computer vision, medical imaging, and compiling and analyzing
 images and data from satellites. Registration is necessary in order to be able to compare or integrate the data obtained from these different measurements.
 
-![]({{ site.baseurl }}/images/medical_registration.png)
+![]({{ site.baseurl }}/images/medical_registration.gif)
 
 Learn more @ Papers with Code: [https://paperswithcode.com/task/image-registration](https://paperswithcode.com/task/image-registration)
 
