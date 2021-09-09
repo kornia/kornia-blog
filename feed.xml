@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-09-09T08:49:36-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Image Registration with Kornia and PyTorch in the GPU</title><link href="/kornia-blog/announcement/2021/09/09/image-registration.html" rel="alternate" type="text/html" title="Image Registration with Kornia and PyTorch in the GPU" /><published>2021-09-09T00:00:00-05:00</published><updated>2021-09-09T00:00:00-05:00</updated><id>/kornia-blog/announcement/2021/09/09/image-registration</id><content type="html" xml:base="/kornia-blog/announcement/2021/09/09/image-registration.html">&lt;p&gt;Dear kornians,&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/kornia-blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/kornia-blog/" rel="alternate" type="text/html" /><updated>2021-09-09T08:50:38-05:00</updated><id>/kornia-blog/feed.xml</id><title type="html">Planet Kornia</title><subtitle>The blog to backprop the pixels to the future.</subtitle><entry><title type="html">Image Registration with Kornia and PyTorch in the GPU</title><link href="/kornia-blog/announcement/2021/09/09/image-registration.html" rel="alternate" type="text/html" title="Image Registration with Kornia and PyTorch in the GPU" /><published>2021-09-09T00:00:00-05:00</published><updated>2021-09-09T00:00:00-05:00</updated><id>/kornia-blog/announcement/2021/09/09/image-registration</id><content type="html" xml:base="/kornia-blog/announcement/2021/09/09/image-registration.html">&lt;p&gt;Dear kornians,&lt;/p&gt;
 
 &lt;p&gt;As previously announced, we are starting to include more high level APIs in &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/tasks.html&quot;&gt;Kornia&lt;/a&gt;
 to help developers and researchers create innovative applicationsfor Computer Vision.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/kornia-blog/images/kornia_logo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The first release in that direction is our &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/geometry.transform.html#kornia.geometry.transform.image_registrator.ImageRegistrator&quot;&gt;ImageRegistration&lt;/a&gt; 
-PI that leverages PyTorch Autograd engine and the GPU power to solve by direct optimization the problem of aligning two images on the fly.&lt;/p&gt;
+&lt;p&gt;The first release in that direction is our &lt;a href=&quot;https://kornia.readthedocs.io/en/latest/geometry.transform.html#kornia.geometry.transform.image_registrator.ImageRegistrator&quot;&gt;ImageRegistration&lt;/a&gt; API that leverages PyTorch Autograd engine and the
+GPU power to solve by direct optimization the problem of aligning two images on the fly.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;kornia.geometry&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;KG&lt;/span&gt;
 
@@ -26,7 +26,7 @@ images and data from satellites. Registration is necessary in order to be able t
 and &lt;a href=&quot;https://kornia-tutorials.readthedocs.io/en/latest/image_registration.html&quot;&gt;tutorials&lt;/a&gt;.&lt;/p&gt;
 
 &lt;center&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/I-g3EhBIsDs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Re1q6vRfZac&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/center&gt;
 
 &lt;p&gt;Stay tuned for upcoming news and projects around the #kornia universe.&lt;/p&gt;
